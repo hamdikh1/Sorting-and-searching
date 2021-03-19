@@ -1,0 +1,18 @@
+ALGORITHM Insertion_sort 
+VAR
+   Tab  : ARRAY_OF INTEGER[30];
+   sum :INTEGER := 0;
+   I,j, n, RES : INTEGER;
+  
+BEGIN
+FOR i FROM 2 TO n  DO
+RES :=Tab[i]
+j:=i
+    while (j>1) and (Tab[j-1]>RES) DO
+     Tab[j]:=Tab[j-1]
+     j:=j-1
+     END while
+     Tab[j]:=RES
+END FOR     
+END
+        
